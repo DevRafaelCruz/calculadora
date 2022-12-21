@@ -12,7 +12,7 @@
         Calculadora
     </h1>
     <main>
-        <div id="b1" class="conta">
+        <div id="b1" class="conta" onclick="mostrar()">
             <h2>Adição</h2>
             <form>
                 <input type="number" name="soma1" id="isoma1" oninput="isoma3.innerHTML = Number(soma1.value) + Number(soma2.value)">
@@ -26,25 +26,41 @@
         <div id="b2" class="conta">
             <h2>Subtração</h2>
             <form>
-                <input type="number" name="soma1" id="isoma1" oninput="isoma3.innerHTML = Number(soma1.value) - Number(soma2.value)">
-                <input type="number" name="soma2" id="isoma2"
-                oninput="isoma3.innerHTML = Number(soma1.value) - Number(soma2.value)">
+                <input type="number" name="sub1" id="isub1" oninput="isub3.innerHTML = Number(sub1.value) - Number(sub2.value)">
+                <input type="number" name="sub2" id="isub2"
+                oninput="isub3.innerHTML = Number(sub1.value) - Number(sub2.value)">
                 <p id="resultado">
-                    <output name="soma3" id="isoma3">0</output>
+                    <output name="sub3" id="isub3">0</output>
                 </p>
             </form>
         </div>
         <div id="b3" class="conta">
             <h2>Multiplicação</h2>
             <form>
-                <input type="number" name="soma1" id="isoma1" oninput="isoma3.innerHTML = Number(soma1.value) * Number(soma2.value)">
-                <input type="number" name="soma2" id="isoma2"
-                oninput="isoma3.innerHTML = Number(soma1.value) * Number(soma2.value)">
+                <input type="number" name="mult1" id="imult1" oninput="imult3.innerHTML = Number(mult1.value) * Number(mult2.value)">
+                <input type="number" name="mult2" id="imult2"
+                oninput="imult3.innerHTML = Number(mult1.value) * Number(mult2.value)">
                 <p id="resultado">
-                    <output name="soma3" id="isoma3">0</output>
+                    <output name="mult3" id="imult3">0</output>
+                </p>
+            </form>
+        </div>
+        <div id="b4" class="conta">
+            <h2>Divisão</h2>
+            <form>
+                <input type="number" name="div1" id="idiv1" oninput="idiv3.innerHTML = Number(div1.value) / Number(div2.value)">
+                <input type="number" name="div2" id="idiv2"
+                oninput="idiv3.innerHTML = Number(div1.value) / Number(div2.value)">
+                <p id="resultado">
+                    <output name="div3" id="idiv3">0</output>
                 </p>
             </form>
         </div>
     </main>
+    <script>
+        function mostrar(){
+            document.html.body.form.style.display = "none"
+        }
+    </script>
 </body>
 </html>

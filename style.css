@@ -37,6 +37,7 @@ h2{
 }
 
 input{
+    height: 1.5em;
     width: 94%;
     box-shadow: 2px 2px 3px rgba(83, 83, 83, 0.318);
     border-radius: 20px;
@@ -60,6 +61,15 @@ input{
 
 
 @media screen and (min-width: 858px){
+    form{
+        display: none;
+    }
+
+    div:hover form{
+        animation-duration: 1s;
+        display: block;
+    }
+
     main{
         display: flex;
         flex-direction: row;
