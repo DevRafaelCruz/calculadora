@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>
+        Calculadora
+    </h1>
+    <main>
+        <div id="b1" class="conta">
+            <h2>Adição</h2>
+            <form>
+                <input type="number" name="soma1" id="isoma1" oninput="isoma3.innerHTML = Number(soma1.value) + Number(soma2.value)">
+                <input type="number" name="soma2" id="isoma2"
+                oninput="isoma3.innerHTML = Number(soma1.value) + Number(soma2.value)">
+                <p id="resultado">
+                    <output name="soma3" id="isoma3">0</output>
+                </p>
+            </form>
+        </div>
+        <div id="b2" class="conta">
+            <h2>Subtração</h2>
+            <form>
+                <input type="number" name="soma1" id="isoma1" oninput="isoma3.innerHTML = Number(soma1.value) - Number(soma2.value)">
+                <input type="number" name="soma2" id="isoma2"
+                oninput="isoma3.innerHTML = Number(soma1.value) - Number(soma2.value)">
+                <p id="resultado">
+                    <output name="soma3" id="isoma3">0</output>
+                </p>
+            </form>
+        </div>
+        <div id="b3" class="conta">
+            <h2>Multiplicação</h2>
+            <form>
+                <input type="number" name="soma1" id="isoma1" oninput="isoma3.innerHTML = Number(soma1.value) * Number(soma2.value)">
+                <input type="number" name="soma2" id="isoma2"
+                oninput="isoma3.innerHTML = Number(soma1.value) * Number(soma2.value)">
+                <p id="resultado">
+                    <output name="soma3" id="isoma3">0</output>
+                </p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
