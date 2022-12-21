@@ -37,6 +37,7 @@ h2{
 }
 
 input{
+    box-shadow: 2px 2px 3px rgba(83, 83, 83, 0.318);
     border-radius: 20px;
     margin: 5px;
 }
@@ -50,8 +51,26 @@ input{
 }
 
 
-
-
-
 @media screen and (min-width: 600px){
+    .conta{
+        margin: 10px;
+        display: inline-block;
+    }
+}
+
+
+@media screen and (min-width: 858px){
+    #b3{
+        float: right;
+    }
+    #b2{
+        position: relative;
+        top: 0px;
+        left: 0;
+        transform: translate(-50% -50%);
+    }
+    .conta{
+        margin: 10px;
+        display: inline-block;
+    }
 }
