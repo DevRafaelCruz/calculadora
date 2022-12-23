@@ -12,9 +12,9 @@
         Calculadora
     </h1>
     <main>
-        <div id="b1" class="conta" onclick="mostrar()">
+        <div id="b1" class="conta" onclick="mostrarad()">
             <h2>Adição</h2>
-            <form>
+            <form id="ad">
                 <input type="number" name="soma1" id="isoma1" oninput="isoma3.innerHTML = Number(soma1.value) + Number(soma2.value)">
                 <input type="number" name="soma2" id="isoma2"
                 oninput="isoma3.innerHTML = Number(soma1.value) + Number(soma2.value)">
@@ -23,9 +23,9 @@
                 </p>
             </form>
         </div>
-        <div id="b2" class="conta">
+        <div id="b2" class="conta" onclick="mostrarsub()">
             <h2>Subtração</h2>
-            <form>
+            <form id="sub">
                 <input type="number" name="sub1" id="isub1" oninput="isub3.innerHTML = Number(sub1.value) - Number(sub2.value)">
                 <input type="number" name="sub2" id="isub2"
                 oninput="isub3.innerHTML = Number(sub1.value) - Number(sub2.value)">
@@ -34,9 +34,9 @@
                 </p>
             </form>
         </div>
-        <div id="b3" class="conta">
+        <div id="b3" class="conta" onclick="mostrarmu()">
             <h2>Multiplicação</h2>
-            <form>
+            <form id="mu">
                 <input type="number" name="mult1" id="imult1" oninput="imult3.innerHTML = Number(mult1.value) * Number(mult2.value)">
                 <input type="number" name="mult2" id="imult2"
                 oninput="imult3.innerHTML = Number(mult1.value) * Number(mult2.value)">
@@ -45,9 +45,9 @@
                 </p>
             </form>
         </div>
-        <div id="b4" class="conta">
+        <div id="b4" class="conta" onclick="mostrardiv()">
             <h2>Divisão</h2>
-            <form>
+            <form id="div">
                 <input type="number" name="div1" id="idiv1" oninput="idiv3.innerHTML = Number(div1.value) / Number(div2.value)">
                 <input type="number" name="div2" id="idiv2"
                 oninput="idiv3.innerHTML = Number(div1.value) / Number(div2.value)">
@@ -58,8 +58,21 @@
         </div>
     </main>
     <script>
-        function mostrar(){
-            document.html.body.form.style.display = "none"
+        function mostrarad(){
+            var form = window.document.getElementById('ad')
+            form.style.display = 'block'
+        }
+        function mostrarsub(){
+            var form = window.document.getElementById('sub')
+            form.style.display = 'block'
+        }
+        function mostrarmu(){
+            var form = window.document.getElementById('mu')
+            form.style.display = 'block'
+        }
+        function mostrardiv(){
+            var form = window.document.getElementById('div')
+            form.style.display = 'block'
         }
     </script>
 </body>

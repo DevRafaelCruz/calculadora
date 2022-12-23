@@ -65,9 +65,9 @@ input{
         display: none;
     }
 
-    div:hover form{
-        animation-duration: 1s;
-        display: block;
+    div:hover{
+        width: 300px;
+        transition-duration: .5s;
     }
 
     main{
